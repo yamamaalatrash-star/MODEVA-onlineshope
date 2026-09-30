@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    header{
+        .nav{
+            position: fixed;
+            top: 0;
+            z-index: 5;
+            width: 100vw;
+            padding: 24px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .nav-ul{
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    list-style: none;
+                    gap: 40px;
+                    color: aliceblue;
+                    #li-themes{
+                        display: flex;
+                        align-items: center;
+                        img{
+                            display: none;
+                        }
+                        &:hover{
+                            background-color:rgba(115, 51, 28, 0.45);
+                            border-radius: 6px;
+                            padding: 10px ;
+                            img{
+                                margin: 5px;
+                                display: block;
+                                
+                                
+                            }
+                        }
+                        a{
+                            color:rgb(14, 5, 3);
+                            text-decoration: none;
+                            
+                        }
+                    }
+                }
+            }
+            .lastInNav{
+                display: flex;
+                .child{
+                display: flex;
+                input{
+                    border: 1px solid oklch(81.558% 0.0356 17.764);
+                }
+                button{
+                    border: 1px solid oklch(81.558% 0.0356 17.764);;
+                }}
+                .cart{
+                    display: flex;
+                    img{
+                        color: black;
+                    }
+                }
+            }
+            .parse{
+                display: none;
+            }
+        }
+        .hero{
+            
+            img{
+                height: 110vh;
+                width: 100%;
+            }
+        }
+        
+    }
+}
+@media screen and (max-width: 992px){
+    body{
+        header{
+            .nav{
+                padding: 30px 20px;
+                .nav-ul{
+                    display: none;
+                }
+                .lastInNav{
+                    display: none;
+                }
+                .parse{
+                    display: block;
+                }
+            }
+        }
+    }
+
+}
