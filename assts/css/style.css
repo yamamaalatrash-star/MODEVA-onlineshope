@@ -5,12 +5,14 @@
 }
 body{
     header{
+        
         .nav{
+            height: 90px;
             position: fixed;
             top: 0;
             z-index: 5;
             width: 100vw;
-            padding: 24px 50px;
+            padding: 24px 70px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -68,11 +70,32 @@ body{
             }
         }
         .hero{
-            
-            img{
-                height: 110vh;
-                width: 100%;
+            background-image: url(../img/bac1.png);
+            background-size: cover; /* هذا أهم شي */
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh; /* عشان تغطي طول الشاشة */
+            width: 100%;
+            padding-top: 232px;
+            padding-left: 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .h1-hero{
+                color: aliceblue;
+                max-width: 570px;
+                font-weight: 700;
+                font-size: 900;
+                font-size:30px;
             }
+            .scroll-now{
+                display: flex;
+                align-items: center;
+                margin: 0 auto;
+                gap: 5px;
+                color: antiquewhite;
+            }
+            
         }
         
     }
@@ -91,6 +114,10 @@ body{
                 .parse{
                     display: block;
                 }
+            }
+            .hero{
+                padding-left: 20px;
+
             }
         }
     }
