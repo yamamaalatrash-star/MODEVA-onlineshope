@@ -50,19 +50,33 @@ body{
             }
             .lastInNav{
                 display: flex;
+                gap: 5px;
                 .child{
                 display: flex;
                 input{
                     border: 1px solid oklch(81.558% 0.0356 17.764);
                 }
-                button{
-                    border: 1px solid oklch(81.558% 0.0356 17.764);;
+                a{
+                    border: 1px solid oklch(81.558% 0.0356 17.764);
+                    background-color: rgb(161, 144, 122);
                 }}
                 .cart{
                     display: flex;
-                    img{
-                        color: black;
+                    .login-icon{
+                        &:hover{
+                            background-color: rgba(80, 77, 77, 0.678);
+                            border-radius: 30%;
+                            padding: 3px;
+                    }}
+                    .cart-icon{
+                        &:hover{
+                            background-color: rgba(80, 77, 77, 0.678);
+                            border-radius: 30%;
+                            padding: 3px;
                     }
+
+                    }
+
                 }
             }
             .parse{
@@ -99,6 +113,7 @@ body{
         }
         
     }
+    
 }
 @media screen and (max-width: 992px){
     body{
