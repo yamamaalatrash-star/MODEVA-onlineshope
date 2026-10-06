@@ -7,7 +7,8 @@ body{
     header{
         
         .nav{
-            height: 90px;
+            background-color: #8b45139d;
+            height: 70px;
             position: fixed;
             top: 0;
             z-index: 5;
@@ -131,6 +132,7 @@ body{
                     display: flex;
                     justify-content: space-around;
                     align-items: center; 
+                    border-radius: 10px;
                     
                     a{
                         color: aliceblue;
@@ -153,6 +155,7 @@ body{
                     display: flex;
                     justify-content: space-around;
                     align-items: center;
+                    border-radius: 10px;
                     
                     a{
                         color: aliceblue;
@@ -179,6 +182,7 @@ body{
                     align-items: center;
                     width: 50%;
                     height: 100vh;
+                    border-radius: 10px;
                     
                     a{
                         color: aliceblue;
@@ -211,11 +215,14 @@ body{
                 justify-content: space-between;
                 padding-left: 70px;
                 flex-wrap: wrap;
+                margin-top: 40px ;
                 .item{
                     max-width:300px ;
                     
                     img{
+                        margin-top: 10px ;
                         width: 100%;
+                        border-radius: 10px;
                     }
                     .prise{
                         display: flex;
