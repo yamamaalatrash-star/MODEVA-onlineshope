@@ -246,6 +246,32 @@ body{
                 color: aliceblue;
             }
         }
+        .info-section{
+            margin-top: 64px;
+            display: flex;
+            padding-left: 70px ;
+            flex-direction: row;
+            gap: 32px ;
+            .like{
+                padding: 20px ;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap:25px;
+                max-width: 347px ;
+                border: 20px solid #3e3e3e2f;
+                .like-icon{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 50px;
+                    height: 50px ;
+                    border-radius: 100%;
+                    background-color: #8B4513;
+                }
+            }
+
+        }
     }
     
 }
@@ -285,6 +311,11 @@ body{
                 .products{
                     padding-left: 20px ;
                 }
+            }
+            .info-section{
+                padding-left: 20px ;
+                flex-direction: column;
+
             }
         }
     }
