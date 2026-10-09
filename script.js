@@ -5,3 +5,4 @@ loveIcon.forEach((icon)=>{
         icon.style.color=icon.classList.contains("fa-solid")?"#8B4513":"black";
     })
 })
+

@@ -245,6 +245,14 @@ body{
                 background-color: #8B4513;
                 color: aliceblue;
             }
+            .see-less{
+                margin-left: 70px;
+                margin-top: 32px;
+                padding:7px;
+                background-color: #8B4513;
+                color: aliceblue;
+                display: none;
+            }
         }
         .info-section{
             margin-top: 64px;
