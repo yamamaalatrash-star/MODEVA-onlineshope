@@ -214,6 +214,64 @@ body{
                 flex-direction: row;
                 justify-content: space-between;
                 padding-left: 70px;
+                overflow-x: auto;
+                margin-top: 40px ;
+                gap:20px ;
+                .item{
+                    /* max-width:300px ; */
+                    width:30%;
+                    flex-shrink:0;
+                    
+                    img{
+                        margin-top: 10px ;
+                        width: 100%;
+                        border-radius: 10px;
+                    }
+                    .prise{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-between;
+                        img{
+                            
+                            width: 20px;
+                            height: 20px;
+                            
+                        }
+                    }
+                }
+            }
+            .see-more{
+                margin-left: 70px;
+                margin-top: 32px;
+                padding:7px;
+                background-color: #8B4513;
+                color: aliceblue;
+            }
+            .see-less{
+                margin-left: 70px;
+                margin-top: 32px;
+                padding:7px;
+                background-color: #8B4513;
+                color: aliceblue;
+                display: none;
+            }
+        }
+        .the_best_dress_for_the_best_men{
+            margin-top: 44px;
+            h1{
+                color: 3E3E3E;
+                max-width: 870px;
+                font-weight: 700;
+                font-size:50px;
+                padding-left: 70px;
+                font-family:"Playfair Display", serif;
+            }
+            .products{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding-left: 70px;
                 flex-wrap: wrap;
                 margin-top: 40px ;
                 .item{
