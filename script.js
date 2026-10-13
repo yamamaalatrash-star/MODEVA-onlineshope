@@ -8,37 +8,43 @@ loveIcon.forEach((icon)=>{
 
 
 const items=document.querySelectorAll(".item");
-console.log(items);
-const seeLessBtn=document.querySelector(".see-less");
 
 const seeMoreBtn=document.querySelector(".see-more");
 
 let count =0;
 seeMoreBtn.addEventListener("click", ()=>{
+    items.forEach(item=>{
+        item.style.transform=`translateX(${count*(-90)}%)`;
+    })
     if(count==items.length-1){
         count=0;
     }else{
         count++;
     }
-    items.forEach(item=>{
-        item.style.transform=`translateX(${count * (-50)}%)`;
-        seeLessBtn.style.display="block";
-        
-
-    })
 })
 
-seeLessBtn.addEventListener("click", ()=>{
-    if(count==0){
-        count=items.length-1;
-        seeLessBtn.style.display="none";
+
+
+const manItems=document.querySelectorAll(".man-items");
+console.log(manItems);
+const seeMoreManClothes=document.querySelector(".see-more-manClothes");
+let i=0;
+seeMoreManClothes.addEventListener("click", ()=>{
+    manItems.forEach(manItem=>{
+        manItem.style.transform=`translateX(${i*(-90)}%)`;
+    })
+    if (i==manItems.length-1) {
+        i=0;
     }else{
-        count--;
+        i++;
     }
-    items.forEach(item=>{
-        item.style.transform=`translateX(${count * (50)}%)`;
-    })
 })
+
+
+
+
+
+
 
 
 

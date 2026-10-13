@@ -232,30 +232,27 @@ body{
                         flex-direction: row;
                         align-items: center;
                         justify-content: space-between;
-                        img{
-                            
-                            width: 20px;
-                            height: 20px;
-                            
+                        button{
+                            img{
+                                width: 20px;
+                                height: 20px;
+                            }
                         }
                     }
                 }
             }
-            .see-more{
-                margin-left: 70px;
-                margin-top: 32px;
-                padding:7px;
-                background-color: #8B4513;
-                color: aliceblue;
+            .transformBTN{
+                display:flex;
+                justify-content: flex-end;
+                .see-more{
+                    margin-left: 70px;
+                    margin-top: 32px;
+                    padding:7px;
+                    background-color: #8B4513;
+                    color: aliceblue;
+                }
             }
-            .see-less{
-                margin-left: 70px;
-                margin-top: 32px;
-                padding:7px;
-                background-color: #8B4513;
-                color: aliceblue;
-                display: none;
-            }
+
         }
         .the_best_dress_for_the_best_men{
             margin-top: 44px;
@@ -272,11 +269,12 @@ body{
                 flex-direction: row;
                 justify-content: space-between;
                 padding-left: 70px;
-                flex-wrap: wrap;
+                overflow-x: auto;
+                gap:20px;
                 margin-top: 40px ;
-                .item{
-                    max-width:300px ;
-                    
+                .man-items{
+                    max-width:30% ;
+                    flex-shrink:0;
                     img{
                         margin-top: 10px ;
                         width: 100%;
@@ -296,21 +294,18 @@ body{
                     }
                 }
             }
-            .see-more{
-                margin-left: 70px;
-                margin-top: 32px;
-                padding:7px;
-                background-color: #8B4513;
-                color: aliceblue;
+            .transformBTN{
+                display:flex;
+                justify-content:flex-end;
+                .see-more-manClothes{
+                    margin-left: 70px;
+                    margin-top: 32px;
+                    padding:7px;
+                    background-color: #8B4513;
+                    color: aliceblue;
             }
-            .see-less{
-                margin-left: 70px;
-                margin-top: 32px;
-                padding:7px;
-                background-color: #8B4513;
-                color: aliceblue;
-                display: none;
             }
+
         }
         .info-section{
             margin-top: 64px;
