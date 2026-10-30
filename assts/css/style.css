@@ -52,15 +52,45 @@ body{
             .lastInNav{
                 display: flex;
                 gap: 5px;
+                flex-direction: row;
                 .child{
                 display: flex;
-                input{
-                    border: 1px solid oklch(81.558% 0.0356 17.764);
+                gap: 5px ;
+                .searchHistory{
+                    position: relative;
+                    display: flex;
+                    flex-direction: row;
+                    form{
+                        display: flex;
+                        gap: 5px ;
+                        .input{ 
+                            width: 100%;
+                            
+                        }
+                        .search-button{
+                            border: 1px solid oklch(81.558% 0.0356 17.764);
+                            background-color: rgb(161, 144, 122);
+                            border-radius: 30%;
+                            &:hover{
+                                background-color: rgba(80, 77, 77, 0.678);
+                                padding: 3px;
+                        }
+                        }}
+                    .ulSearchHistory{
+                        margin-top: 24px ;
+                        position: absolute;
+                        z-index: 89px;
+                        width: 86%;
+                        list-style: none;
+                        background-color: #ae6836c3;
+                        border: 1px solid #8B4513;
+                        .li{
+                                list-style: none;
+                            }
+                    }
                 }
-                a{
-                    border: 1px solid oklch(81.558% 0.0356 17.764);
-                    background-color: rgb(161, 144, 122);
-                }}
+                }
+                }
                 .cart{
                     display: flex;
                     .login-icon{
@@ -214,7 +244,7 @@ body{
                 flex-direction: row;
                 justify-content: space-between;
                 padding-left: 70px;
-                overflow-x: auto;
+                overflow-x: hidden;
                 margin-top: 40px ;
                 gap:20px ;
                 .item{
@@ -256,20 +286,22 @@ body{
         }
         .the_best_dress_for_the_best_men{
             margin-top: 44px;
+            
+            padding-left: 70px;
             h1{
                 color: 3E3E3E;
                 max-width: 870px;
                 font-weight: 700;
                 font-size:50px;
-                padding-left: 70px;
+                
                 font-family:"Playfair Display", serif;
             }
             .products{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                padding-left: 70px;
-                overflow-x: auto;
+                
+                overflow-x: hidden;
                 gap:20px;
                 margin-top: 40px ;
                 .man-items{
@@ -335,7 +367,7 @@ body{
         }
     }
     
-}
+
 
 @media screen and (max-width: 992px){
     body{
@@ -373,6 +405,9 @@ body{
                 .products{
                     padding-left: 20px ;
                 }
+            }
+            .the_best_dress_for_the_best_men{
+                padding-left: 20px;
             }
             .info-section{
                 padding-left: 20px ;

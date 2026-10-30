@@ -1,11 +1,14 @@
+//additing love section to loved photo 
+
 const loveIcon=document.querySelectorAll(".fa-regular.fa-heart");
 loveIcon.forEach((icon)=>{
     icon.addEventListener("click",()=>{
         icon.classList.toggle("fa-solid");
-        icon.style.color=icon.classList.contains("fa-solid")?"#8B4513":"black";
+        icon.style.color = icon.classList.contains("fa-solid") ? "brown"   : "" ;
     })
 })
 
+//additing transform to woemen section 
 
 const items=document.querySelectorAll(".item");
 
@@ -23,10 +26,10 @@ seeMoreBtn.addEventListener("click", ()=>{
     }
 })
 
-
+//adding transform to man section 
 
 const manItems=document.querySelectorAll(".man-items");
-console.log(manItems);
+
 const seeMoreManClothes=document.querySelector(".see-more-manClothes");
 let i=0;
 seeMoreManClothes.addEventListener("click", ()=>{
@@ -39,6 +42,52 @@ seeMoreManClothes.addEventListener("click", ()=>{
         i++;
     }
 })
+
+const lastInNav=document.querySelectorAll(".lastInNav");
+const child=document.querySelectorAll(".child ")
+const  searchHistory=document.querySelector(".searchHistory")
+const searchForm=document.querySelector(".searchForm")
+
+const input=document.querySelector(".input")
+
+const searchBtn=document.querySelector(".searchBtn")
+
+const ulSearchHistory=document.querySelector(".ulSearchHistory")
+const li=document.querySelector(".li")
+let arr=[]
+input.addEventListener("click", (event) => {
+    if (arr.length > 0) {
+        ulSearchHistory.style.display = "block";
+        read();
+    }
+});
+function read() {
+    ulSearchHistory.innerHTML="";
+    arr.forEach(item=>{
+        ulSearchHistory.innerHTML+=`<li class="li">${item}</li>`;     
+    })
+}    
+
+searchBtn.addEventListener("click",(event)=>{
+    event.preventDefault()   
+    
+    let newSearched=input.value.trim();
+    if (newSearched !=="") {
+        arr.unshift(newSearched)
+    }
+    input.value=''
+    ulSearchHistory.style.display="none"; 
+        read()
+})
+
+
+
+
+
+
+
+
+
 
 
 
