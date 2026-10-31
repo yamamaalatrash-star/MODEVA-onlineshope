@@ -54,7 +54,10 @@ const searchBtn=document.querySelector(".searchBtn")
 
 const ulSearchHistory=document.querySelector(".ulSearchHistory")
 const li=document.querySelector(".li")
-let arr=[]
+
+let arr=localStorage.getItem("arr")? JSON.parse(localStorage.getItem("arr")): []
+
+
 input.addEventListener("click", (event) => {
     if (arr.length > 0) {
         ulSearchHistory.style.display = "block";
@@ -64,16 +67,20 @@ input.addEventListener("click", (event) => {
 function read() {
     ulSearchHistory.innerHTML="";
     arr.forEach(item=>{
-        ulSearchHistory.innerHTML+=`<li class="li">${item}</li>`;     
+        ulSearchHistory.innerHTML+=`<li class="li">${item}<a href="/about.html?id">edit</a></li>`;   
     })
 }    
 
 searchBtn.addEventListener("click",(event)=>{
+    
     event.preventDefault()   
     
     let newSearched=input.value.trim();
     if (newSearched !=="") {
         arr.unshift(newSearched)
+        
+        localStorage.setItem("searchedId",JSON.stringify(u))
+        localStorage.setItem("arr",JSON.stringify(arr))
     }
     input.value=''
     ulSearchHistory.style.display="none"; 
